@@ -1,8 +1,8 @@
 console.log('hi');
 var about = `
-<h2 id="about">
+<h1 id="about">
             About Yuan
-          </h2>
+          </h1>
           <figure>
            <img
             id="profilepic"
@@ -33,8 +33,29 @@ var about = `
             or <a href="mailto:yuanwen@ad.unc.edu">Send an email</a>.
           </p>`;
 
-// var landing = ``
-// document.getElementById('aboutlink').onclick = changeContent;
+var landing = `<img
+id="landingimg"
+src="https://cdn.glitch.com/bbbd9d87-0557-48fe-b253-83473a2706c8%2Fuxdhandbook.jpg?v=1580329849100"
+alt="person working on blue and white paper on board"
+width="100%"
+/>
+<h2>
+🚧This project is under construction🚧
+</h2>
+<p>
+This is an online interactive book that you can find theories and
+tools about User Experience (UX) design.The target audience are people who want to learn UX design.
+</p>`;
+
+document.getElementById('aboutlink').onclick = function() {
+  console.log('about');
+  document.querySelector('article').innerHTML = about;
+};
 // function changeContent() {
+//   console.log('about');
 //   document.querySelector('article').innerHTML = about;
 // }
+document.getElementById('homebtn').onclick = function() {
+  console.log('home');
+  document.querySelector('article').innerHTML = landing;
+};
