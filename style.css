@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+
+:root {
+  --main-text-color: #333;
+  --scd-text-color: #818DA6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: var(--main-text-color);
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em 2em 0;
+  text-align: left;
+}
+
+figure {
+  margin:0;
+}
+
+figurecaption {
+  font-size: 0.8em;
+}
+
+img {
+  margin: 0;
+  border-radius: 5px;
+}
+
+#book-nav {
+  width: 200px;
+  position: fixed;
+  top: 36px;
+  float: left;
+}
+
+#book-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#book-nav ul li {
+  margin: 0.5em 0;
+}
+
+a {
+  color: var(--scd-text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+#homebtn:hover {
+  border : none;
+}
+
+#book {
+  width: 75%;
+  float:right;
+}
+
+#title {
+  font-size: 2em;
+  margin: 1rem 0;
+}
+
+#hello {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+  width:100%;
+  font-size: 0.8em;
+  clear: both;
+  color: var(--scd-text-color);
+  text-align: center;
+  padding: 1em;
+}
