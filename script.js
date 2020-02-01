@@ -33,7 +33,7 @@ var about = `
             or <a href="mailto:yuanwen@ad.unc.edu">Send an email</a>.
           </p>`;
 
-var landing = `<img
+var home = `<img
 id="landingimg"
 src="https://cdn.glitch.com/bbbd9d87-0557-48fe-b253-83473a2706c8%2Fuxdhandbook.jpg?v=1580329849100"
 alt="person working on blue and white paper on board"
@@ -67,16 +67,13 @@ document.getElementById('aboutlink').onclick = function () {
   console.log('about');
   document.querySelector('article').innerHTML = about;
 };
-// function changeContent() {
-//   console.log('about');
-//   document.querySelector('article').innerHTML = about;
-// }
-document.getElementById('homebtn').onclick = function () {
+
+document.getElementById('homelink').onclick = function () {
   console.log('home');
-  document.querySelector('article').innerHTML = landing;
+  document.querySelector('article').innerHTML = home;
 };
 
-document.getElementById('homebtn').onclick = function () {
-  console.log('home');
-  document.querySelector('article').innerHTML = landing;
+document.getElementById('introlink').onclick = function () {
+  console.log('intro');
+  document.querySelector('article').innerHTML = intro;
 };
