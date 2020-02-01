@@ -47,7 +47,23 @@ This is an online interactive book that you can find theories and
 tools about User Experience (UX) design.The target audience are people who want to learn UX design.
 </p>`;
 
-document.getElementById('aboutlink').onclick = function() {
+var intro = `
+<h1>What is User Experience (UX) Design?</h1>
+          <p>User experience (UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users. This involves the design of the entire process of acquiring and integrating the product, including aspects of branding, design, usability and function. -- <em>Interaction Design Foundation</em></p>
+          <ul>
+            <li><a href="https://www.interaction-design.org/literature/topics/ux-design" target="_blank">What is user experience design?</a></li>
+            <li><a href="https://www.nngroup.com/articles/definition-user-experience/" target="_blank">The Definition of User Experience (UX)</a></li>
+          </ul>
+          <h2>UX design & Human-Computer Interaction (HCI)</h2>
+          <p>HCI is more academic-based and focuses more on research. UX design is more industry-based and focuses more on practice. While HCI focuses more on understanding the interaction between human and computers through research, UX design focuses more on dictating the rules about how to design a great user experience.</p>
+          <h2>UX design & User-centered Design</h2>
+          <p>User-centered Design is <strong>a process</strong> in which the needs, wants, and limitations of end users of a product are given extensive attention at each stage of the design process. UX design is User-centered. So they can exist together.</p>
+          <ul>
+            <li><a href="https://www.interaction-design.org/literature/topics/user-centered-design" target="_blank">What is User-centered design?</a></li>
+          </ul>
+`;
+
+document.getElementById('aboutlink').onclick = function () {
   console.log('about');
   document.querySelector('article').innerHTML = about;
 };
@@ -55,7 +71,12 @@ document.getElementById('aboutlink').onclick = function() {
 //   console.log('about');
 //   document.querySelector('article').innerHTML = about;
 // }
-document.getElementById('homebtn').onclick = function() {
+document.getElementById('homebtn').onclick = function () {
+  console.log('home');
+  document.querySelector('article').innerHTML = landing;
+};
+
+document.getElementById('homebtn').onclick = function () {
   console.log('home');
   document.querySelector('article').innerHTML = landing;
 };
