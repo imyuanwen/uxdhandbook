@@ -2,7 +2,7 @@
 
 :root {
   --main-text-color: #333;
-  --scd-text-color: #818DA6;
+  --scd-text-color: #1d78bd;
 }
 
 * {
@@ -17,10 +17,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   color: var(--main-text-color);
-  max-width: 1000px;
-  margin: auto;
-  padding: 2em 2em 0;
   text-align: left;
+  margin: 0;
+  padding:0;
 }
 
 h1 {
@@ -45,11 +44,32 @@ img {
   width: 100%;
 }
 
-#book-nav {
+#logo {
   width: 200px;
-  position: fixed;
-  top: 36px;
-  float: left;
+}
+
+nav {
+  max-width: 1000px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+main {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0 auto;
+}
+
+#book-nav {
+  width: 25%;
 }
 
 #book-nav ul {
@@ -58,7 +78,7 @@ img {
 }
 
 #book-nav ul li {
-  margin: 0.5em 0;
+  margin: 0.8em 0;
 }
 
 a {
@@ -76,7 +96,6 @@ a:hover {
 
 #book {
   width: 75%;
-  float:right;
 }
 
 #title {
