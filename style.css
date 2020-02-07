@@ -2,7 +2,10 @@
 
 :root {
   --main-text-color: #333;
-  --scd-text-color: #1d78bd;
+  --scd-text-color: #4f4f4f;
+  --line-color: #e0e0e0;
+  --bg-color: #fff;
+  --link-color: #4371E8;
 }
 
 * {
@@ -15,15 +18,22 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
   color: var(--main-text-color);
   text-align: left;
-  margin: 0;
-  padding:0;
+  margin: 0 1em;
+  padding: 80px 0 0;
+  background-color: var(--bg-color);
 }
 
 h1 {
   font-size: 2em;
+  position: relative;
+}
+
+/* fix the issue that the fixed page header overlaps in-page anchors */
+h1 a {
+  position: absolute;
+  top: -80px;
 }
 
 h2 {
@@ -31,7 +41,7 @@ h2 {
 }
 
 figure {
-  margin:0;
+  margin: 0;
 }
 
 figurecaption {
@@ -45,31 +55,56 @@ img {
 }
 
 #logo {
-  width: 200px;
+  height: 100%;
+  width: auto;
+}
+
+#nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--line-color);
+  z-index: 1;
 }
 
 nav {
+  height: 50px;
+  width: 100%;
   max-width: 1000px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  background-color: var(--bg-color);
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+}
+
+nav ul li {
+  margin: 0 0 0 2em;
+}
+
+#homelink:hover {
+  border: none;
 }
 
 main {
   max-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 #book-nav {
-  width: 25%;
+  width: 200px;
+  height: auto;
+  float: left;
+  position: fixed;
+  top: 64px;
 }
 
 #book-nav ul {
@@ -90,17 +125,17 @@ a:hover {
   border-bottom: 2px solid currentColor;
 }
 
-#homelink:hover {
-  border : none;
+article a {
+  color: var(--link-color);
 }
 
-#book {
+article {
   width: 75%;
+  float: right;
 }
 
-#title {
-  font-size: 2em;
-  margin: 1rem 0;
+article ul li {
+  margin: 0.5em;
 }
 
 #hello {
@@ -110,7 +145,7 @@ a:hover {
 }
 
 footer {
-  width:100%;
+  width: 100%;
   font-size: 0.8em;
   clear: both;
   color: var(--scd-text-color);
