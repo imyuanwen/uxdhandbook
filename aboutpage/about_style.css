@@ -12,10 +12,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Noto Sans", sans-serif;
   color: var(--main-text-color);
@@ -28,13 +24,6 @@ body {
 h1 {
   font-size: 2em;
   position: relative;
-}
-
-/* fix the issue that the fixed page header overlaps in-page anchors */
-
-h1 a {
-  position: absolute;
-  top: -80px;
 }
 
 h2 {
@@ -100,23 +89,6 @@ main {
   margin: 0 auto;
 }
 
-#book-nav {
-  width: 200px;
-  height: auto;
-  float: left;
-  position: fixed;
-  top: 64px;
-}
-
-#book-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#book-nav ul li {
-  margin: 0.8em 0;
-}
-
 a {
   color: var(--scd-text-color);
   text-decoration: none;
@@ -132,11 +104,17 @@ article a {
 
 article {
   width: 75%;
-  float: right;
+  float: left;
 }
 
 article ul li {
   margin: 0.5em;
+}
+
+#hello {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 1em 0;
 }
 
 footer {
