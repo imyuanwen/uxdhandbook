@@ -123,7 +123,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid currentColor;
+  border-bottom: 0.1em solid currentColor;
 }
 
 article a {
