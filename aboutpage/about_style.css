@@ -44,6 +44,12 @@ img {
   width: 100%;
 }
 
+#headpic {
+  border-radius: 50%;
+  width: 60%;
+  margin: 0 auto;
+}
+
 #logo {
   height: 100%;
   width: auto;
@@ -120,7 +126,7 @@ article ul li {
 
 aside {
   width: 40%;
-  padding-left: 2em;
+  padding-left: 4em;
 }
 
 .uppercase {
@@ -130,7 +136,7 @@ aside {
 
 h3 {
   color: var(--link-color);
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 footer {
