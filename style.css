@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 :root {
   --main-text-color: #333;
-  --scd-text-color: #4f4f4f;
+  --scd-text-color: #828282;
   --line-color: #e0e0e0;
   --bg-color: #fff;
   --link-color: #4371E8;
@@ -17,12 +17,13 @@ html {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--main-text-color);
   text-align: left;
   margin: 0 1em;
   padding: 80px 0 0;
   background-color: var(--bg-color);
+  font-size: 18px;
 }
 
 h1 {
@@ -137,6 +138,27 @@ article {
 
 article ul li {
   margin: 0.5em;
+}
+
+#landingimg {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://cdn.glitch.com/bbbd9d87-0557-48fe-b253-83473a2706c8%2Fbgimg.jpg?v=1581616998520);
+  background-size: cover;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 130px;
+}
+
+#landingimg h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#landingimg p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
 }
 
 footer {

@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 :root {
   --main-text-color: #333;
-  --scd-text-color: #4f4f4f;
+  --scd-text-color: #828282;
   --line-color: #e0e0e0;
   --bg-color: #fff;
   --link-color: #4371E8;
@@ -13,12 +13,13 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--main-text-color);
   text-align: left;
   margin: 0 1em;
   padding: 80px 0 0;
   background-color: var(--bg-color);
+  font-size: 18px;
 }
 
 h1 {
@@ -46,8 +47,8 @@ img {
 
 #headpic {
   border-radius: 50%;
-  width: 60%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 3em 0 0;
 }
 
 #logo {
@@ -95,6 +96,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 
 a {
@@ -111,7 +113,7 @@ article a {
 }
 
 article {
-  width: 60%;
+  width: 65%;
 }
 
 article ul li {
@@ -121,22 +123,41 @@ article ul li {
 #hello {
   font-size: 4em;
   font-weight: bold;
-  margin: 1em 0;
+  margin: 1em 0 0;
+}
+
+#belowhello {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 2em;
+  color: var(--scd-text-color)
 }
 
 aside {
-  width: 40%;
+  width: 35%;
   padding-left: 4em;
+  color: var(--scd-text-color);
+}
+
+aside p {
+  font-size: 0.9em;
+}
+
+aside a {
+  color: var(--link-color);
 }
 
 .uppercase {
   text-transform: uppercase;
   font-weight: bold;
+  margin-right: 8px;
+  color: var(--main-text-color);
 }
 
 h3 {
-  color: var(--link-color);
+  color: var(--scd-text-color);
   margin-top: 2em;
+  text-decoration: underline;
 }
 
 footer {
