@@ -169,3 +169,105 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
+/* for about page */
+
+#about_main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+#profile {
+  width: 65%;
+}
+
+#hello {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 1em 0 0;
+}
+
+#belowhello {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 2em;
+  color: var(--scd-text-color)
+}
+
+#about_aside {
+  width: 35%;
+  padding-left: 4em;
+  color: var(--scd-text-color);
+}
+
+#about_aside p {
+  font-size: 0.9em;
+}
+
+#about_aside a {
+  color: var(--link-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 8px;
+  color: var(--main-text-color);
+}
+
+h3 {
+  color: var(--scd-text-color);
+  margin-top: 2em;
+  text-decoration: underline;
+}
+
+/* for resources page */
+
+#resources_main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#resources_main h1 {
+  width: 100%;
+}
+.card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid var(--line-color);
+  border-radius: 5px;
+  margin: 1em 0;
+}
+
+.cardimg {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card p {
+  margin: 16px;
+}
+
+.cardtitle {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.carddescription {
+  font-size: 0.9em;
+}
+
+.cardlink {
+  color: var(--main-text-color);
+}
+
+.cardlink:hover {
+  border: none;
+}
