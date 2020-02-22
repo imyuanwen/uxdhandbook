@@ -129,6 +129,7 @@ a:hover {
 
 article a {
   color: var(--link-color);
+  font-weight: bold;
 }
 
 article {
@@ -190,6 +191,11 @@ footer {
   margin: 1em 0 0;
 }
 
+#hello a:hover {
+  text-decoration: underline;
+  border: none;
+}
+
 #belowhello {
   font-size: 1.5em;
   font-weight: bold;
@@ -207,8 +213,15 @@ footer {
   font-size: 0.9em;
 }
 
+#headpic {
+  border-radius: 50%;
+  width: 70%;
+  margin: 3em 0 0;
+}
+
 #about_aside a {
   color: var(--link-color);
+  font-weight: bold;
 }
 
 .uppercase {
@@ -224,6 +237,19 @@ h3 {
   text-decoration: underline;
 }
 
+#projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects {
+  width: 30%;
+  height: 200px;
+  margin: 0;
+  border: 1px solid var(--line-color);
+  border-radius: 5px;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
 /* for resources page */
 
 #resources_main {
@@ -237,12 +263,21 @@ h3 {
 #resources_main h1 {
   width: 100%;
 }
+
 .card {
   width: 300px;
   height: 350px;
   border: 1px solid var(--line-color);
   border-radius: 5px;
   margin: 1em 0;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(67, 113, 232, 0.3);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(67, 113, 232, 0.3);
+  box-shadow: 0px 4px 20px 0px rgba(67, 113, 232, 0.3);
+  transform: translate(0, -1px);
 }
 
 .cardimg {
