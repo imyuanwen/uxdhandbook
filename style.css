@@ -323,3 +323,22 @@ h3 {
 .cardlink:hover {
   border: none;
 }
+
+button {
+  width: 100%;
+  background-color: white;
+  color: var(--link-color);
+  border-radius: 5px;
+  border: 1px solid var(--line-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.hide {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
